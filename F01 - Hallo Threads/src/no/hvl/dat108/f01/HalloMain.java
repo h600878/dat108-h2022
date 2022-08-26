@@ -45,15 +45,26 @@ public class HalloMain {
 //			tt.start();
 //		}
 		
+//		for (int i=1; i<=15; i++) {
+//			String traadnavn = "tråd " + i;
+//			Thread tt = new Thread(new Runnable(){
+//				@Override
+//				public void run() {
+//					System.out.println("Hallo fra " + traadnavn);
+//							
+//				}
+//			});
+//			tt.start();
+//		}
+
 		for (int i=1; i<=15; i++) {
-			final String traadnavn = "tråd " + i;
-			Thread tt = new Thread(new Runnable(){
+			Thread tt = new Thread("tråd " + i) {
 				@Override
 				public void run() {
-					System.out.println("Hallo fra " + traadnavn);
+					System.out.println("Hallo fra " + getName());
 							
 				}
-			});
+			};
 			tt.start();
 		}
 		
