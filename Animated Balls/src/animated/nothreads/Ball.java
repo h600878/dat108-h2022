@@ -13,7 +13,7 @@ import java.util.Random;
 import javax.swing.JPanel;
 
 @SuppressWarnings("serial")
-public class Ball extends JPanel implements Runnable {
+public class Ball extends JPanel {
 
 	Color color;
 	private int vx;
@@ -44,12 +44,10 @@ public class Ball extends JPanel implements Runnable {
 		int x = getX();
 		int y = getY();
 
-		if (x + vx < 0 && vx < 0 
-				|| x + BALL_DIAMETER + vx > getParent().getWidth() && vx > 0) {
+		if (x + vx < 0 && vx < 0 || x + BALL_DIAMETER + vx > getParent().getWidth() && vx > 0) {
 			vx *= -1;
 		}
-		if (y + vy < 0 && vy < 0 
-				|| y + BALL_DIAMETER + vy > getParent().getHeight() && vy > 0) {
+		if (y + vy < 0 && vy < 0 || y + BALL_DIAMETER + vy > getParent().getHeight() && vy > 0) {
 			vy *= -1;
 		}
 		x += vx;
@@ -58,6 +56,7 @@ public class Ball extends JPanel implements Runnable {
 		setLocation(x, y);
 
 	}
+
 	@Override
 	public Dimension getPreferredSize() {
 		return new Dimension(BALL_DIAMETER, BALL_DIAMETER);
@@ -65,13 +64,13 @@ public class Ball extends JPanel implements Runnable {
 
 	protected void paintComponent(Graphics g) {
 		super.paintComponent(g);
-		
+
 		g.setColor(color);
-		g.fillOval(0, 0, BALL_DIAMETER-1, BALL_DIAMETER-1);
+		g.fillOval(0, 0, BALL_DIAMETER - 1, BALL_DIAMETER - 1);
 		g.setColor(Color.black);
-		g.drawOval(0, 0, BALL_DIAMETER-1, BALL_DIAMETER-1);
+		g.drawOval(0, 0, BALL_DIAMETER - 1, BALL_DIAMETER - 1);
 	}
-	
+
 	private int randomVxVy() {
 		return (int) Math.round((Math.random() * MAX_VX_VY));
 	}
