@@ -4,18 +4,19 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class TellerAtomic {
 
-	private AtomicInteger verdi = new AtomicInteger();
+    // Atomisk variabel, trådsikker
+    private final AtomicInteger verdi = new AtomicInteger();
 
-	public void tellOpp() {
-		verdi.incrementAndGet();
-	}
+    public void tellOpp() {
+        verdi.incrementAndGet();
+    }
 
-	public void tellNed() {
-		verdi.decrementAndGet();
-	}
+    public void tellNed() {
+        verdi.decrementAndGet();
+    }
 
-	public int getVerdi() {
-		return verdi.get();
-	}
+    public int getVerdi() {
+        return verdi.get();
+    }
 
 }

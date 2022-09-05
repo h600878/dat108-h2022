@@ -1,27 +1,27 @@
 package ex2_immutable;
 
 public class MeldingMutable {
-	
-	private String innhold;
 
-	public MeldingMutable(String innhold) {
-		this.innhold = innhold;
-	}
+    private String innhold;
 
-	public String getInnhold() {
-		return innhold;
-	}
+    public MeldingMutable(String innhold) {
+        this.innhold = innhold;
+    }
 
-	public void setInnhold(String innhold) {
-		this.innhold = innhold;
-	}
-	
-	public void leggTil(String merTekst) {
-		innhold += merTekst;
-	}
+    public String getInnhold() {
+        return innhold;
+    }
 
-	@Override
-	public String toString() {
-		return "MeldingMutable [innhold=" + innhold + "]";
-	}
+    public void setInnhold(String innhold) {
+        this.innhold = innhold;
+    }
+
+    public void leggTil(String merTekst) {
+        innhold += merTekst;
+    }
+
+    @Override
+    public String toString() {
+        return "MeldingMutable [innhold=" + innhold + "]";
+    }
 }

@@ -2,8 +2,8 @@ package ex3_atomic;
 
 public class TelleOppTraad extends Thread {
 
-	private TellerAtomic teller;
-	private int antallGanger;
+	private final TellerAtomic teller;
+	private final int antallGanger;
 
 	public TelleOppTraad(TellerAtomic teller, int antallGanger) {
 		this.teller = teller;
@@ -13,7 +13,6 @@ public class TelleOppTraad extends Thread {
 	@Override
 	public void run() {
 		for (int i = 0; i < antallGanger; i++) {
-
 				// Kristisk seksjon
 				teller.tellOpp(); 
 		}
