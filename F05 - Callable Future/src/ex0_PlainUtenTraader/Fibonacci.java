@@ -1,4 +1,4 @@
-package ex0_PlainUtenTraader.copy;
+package ex0_PlainUtenTraader;
 
 class Fibonacci {
 	

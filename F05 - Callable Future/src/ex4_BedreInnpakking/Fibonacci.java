@@ -1,4 +1,4 @@
-package ex4_Refactoring;
+package ex4_BedreInnpakking;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
