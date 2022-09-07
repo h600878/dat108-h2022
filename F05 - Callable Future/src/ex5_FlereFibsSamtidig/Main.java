@@ -1,4 +1,4 @@
-package ex5_FlereSamtidig;
+package ex5_FlereFibsSamtidig;
 
 import java.time.Duration;
 import java.time.Instant;

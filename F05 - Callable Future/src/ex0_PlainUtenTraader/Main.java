@@ -1,4 +1,4 @@
-package ex0_PlainUtenTraader.copy;
+package ex0_PlainUtenTraader;
 
 import java.time.Duration;
 import java.time.Instant;
