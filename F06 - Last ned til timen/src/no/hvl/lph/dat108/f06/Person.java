@@ -1,8 +1,8 @@
 package no.hvl.lph.dat108.f06;
 
-public class Person {
+public class Person implements Comparable<Person> {
 	
-	//Har fjernet private for å slippe å bruke gettere.
+	//Har fjernet private for å slippe å bruke gettere. Latskap.
 	String fornavn;
 	String etternavn;
 	int fodselsaar;
@@ -17,4 +17,15 @@ public class Person {
 	public String toString() {
 		return "[" + fornavn + " " + etternavn + ", f. " + fodselsaar + "]";
 	}
+
+	@Override
+	public int compareTo(Person other) {
+		return this.etternavn.compareTo((other.etternavn));
+	}
 }
+
+
+
+
+
+
