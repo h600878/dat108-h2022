@@ -1,6 +1,7 @@
 package no.hvl.dat108.f06;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 
 public class F06a {
@@ -29,17 +30,12 @@ public class F06a {
 		
 		//Ønsker å sortere på fornavn. Hva gjør vi?
 		//Angir dette via en ekstra parameter som angir hvordan det skal sammenlignes.
-		sorter(listeAvPersoner, new FornavnSammenligner());
+		sorter(listeAvPersoner, (a,b) -> a.fornavn.compareTo(b.fornavn));
 		System.out.println("Sortert listeAvPersoner: " + listeAvPersoner);
 		
 		//Ønsker å sortere på fødselsår. Hva gjør vi?
 		//Samme her, nå som anonym klasse. 
-		sorter(listeAvPersoner, new Sammenligner<Person>() {
-			@Override
-			public int sammenlign(Person a, Person b) {
-				return a.fodselsaar - b.fodselsaar;
-			}
-		});
+		sorter(listeAvPersoner, (a, b) -> a.fodselsaar - b.fodselsaar);
 		System.out.println("Sortert listeAvPersoner: " + listeAvPersoner);
 	}
 
@@ -48,9 +44,9 @@ public class F06a {
 	private static <T extends Comparable<T>> void sorter(
 			List<T> liste) {
 		
-		sorter(liste, new Sammenligner<T>() {
+		sorter(liste, new Comparator<T>() {
 			@Override
-			public int sammenlign(T a, T b) {
+			public int compare(T a, T b) {
 				return a.compareTo(b);
 			}
 		});
@@ -58,14 +54,14 @@ public class F06a {
 
 	//Den nye metoden med en ekstra Sammenligner-parameter
 	private static <T extends Comparable<T>> void sorter(
-			List<T> liste, Sammenligner<T> s) {
+			List<T> liste, Comparator<T> s) {
 		
 		for (int i=0; i<liste.size(); i++) {
 			for (int j=1; j<liste.size(); j++) {
 				T a = liste.get(j-1);
 				T b = liste.get(j);
 				
-				if (s.sammenlign(a,b) > 0) {
+				if (s.compare(a,b) > 0) {
 					
 					liste.set(j-1, b);
 					liste.set(j, a);
@@ -74,17 +70,3 @@ public class F06a {
 		}
 	}
 }
-
-//-- De nedenfor kunne gjerne vært i egne filer, men ...
-
-interface Sammenligner<T> {
-	public int sammenlign(T a, T b);
-}
-
-class FornavnSammenligner implements Sammenligner<Person> {
-	@Override
-	public int sammenlign(Person a, Person b) {
-		return a.fornavn.compareTo(b.fornavn);
-	}
-}
-

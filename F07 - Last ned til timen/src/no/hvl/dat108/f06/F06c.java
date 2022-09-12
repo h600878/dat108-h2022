@@ -2,18 +2,16 @@ package no.hvl.dat108.f06;
 
 import java.util.ArrayList;
 import java.util.List;
-
-interface Betingelse {
-	boolean erOppfylt(int x);
-}
+import java.util.function.Predicate;
 
 public class F06c {
 	
-	public static List<Integer> plukkUt(List<Integer> liste, Betingelse betingelse) {
+	public static List<Integer> plukkUt(List<Integer> liste, 
+			Predicate<Integer> betingelse) {
 		
 		List<Integer> svar = new ArrayList<>();
 		for(int tall : liste) {
-			if(betingelse.erOppfylt(tall)) {
+			if(betingelse.test(tall)) {
 				svar.add(tall);
 			}
 		}
@@ -29,9 +27,24 @@ public class F06c {
 		resultat = plukkUt(listen, x -> x % 2 == 0); //Alle partall
 		System.out.println(resultat);
 		
-		resultat = plukkUt(listen, x -> x > 3); //Alle tall > 3
+		resultat = plukkUt(listen, storreEnn(3)); //Alle tall > 3
+		System.out.println(resultat);
+		
+		resultat = plukkUt(listen, storreEnn(6)); //Alle tall > 6
+		System.out.println(resultat);
+		
+		resultat = plukkUt(listen, storreEnn(8)); //Alle tall > 8
 		System.out.println(resultat);
 		
 	}
+	
+	public static Predicate<Integer> storreEnn(int grense) {
+		return x -> x > grense;
+	}
 }
+
+
+
+
+
 

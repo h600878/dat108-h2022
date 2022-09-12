@@ -1,5 +1,8 @@
 package no.hvl.dat108.oppgave;
 
+import java.util.List;
+import java.util.function.Predicate;
+
 /*
 * Her er en liten oppgave dere kan prøve selv til mandag for å se
 * om dere har fått med dere hovedideen med lambda-uttrykk.
@@ -17,16 +20,25 @@ package no.hvl.dat108.oppgave;
 
 public class OppgaveBetingetUtskrift {
 	
-//	private static void betingetUtskrift(String s, ???) {
-//		???
-//	}
-//	
-//	public static void main(String[] args) {
-//		???
-//	}
+	private static void betingetUtskrift(String s, Predicate<String> b) {
+		if (b.test(s)) {
+			System.out.println(s);
+		}
+	}
+	
+	public static void main(String[] args) {
+		List<String> liste = List.of("X", "Hallo", "Per", "1234");
+		for (String s : liste) {
+			betingetUtskrift(s, x -> x.length() > 3 || x.startsWith("X")); //Kun hvis streng lengre enn 3
+		}
+//		for (String s : liste) {
+//			betingetUtskrift(s, x -> x.startsWith("X")); //Kun hvis streng begynner på "X"
+//		}
+	}
 }
 
-//@FunctionalInterface
-//interface ??? {
-//	???
-//}
+
+
+
+
+

@@ -8,6 +8,12 @@ public class Eksempel1 {
 		/*
 		 * Opprett og start 2 tråder som kjører doSomeWildStuff() samtidig.
 		 */
+		Runnable r = () -> doSomeWildStuff();
+		
+		Thread t1 = new Thread(r);
+		Thread t2 = new Thread(r);
+		t1.start();
+		t2.start();
 	}
 	
 	public static void doSomeWildStuff() {
