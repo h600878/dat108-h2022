@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Animated Balls/Animated Balls.iml" filepath="$PROJECT_DIR$/Animated Balls/Animated Balls.iml" />
-      <module fileurl="file://$PROJECT_DIR$/F01 - Hallo Threads/F01 - Hallo Threads1.iml" filepath="$PROJECT_DIR$/F01 - Hallo Threads/F01 - Hallo Threads1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/F01 - Hallo Threads/F01 - Hallo Threads.iml" filepath="$PROJECT_DIR$/F01 - Hallo Threads/F01 - Hallo Threads.iml" />
       <module fileurl="file://$PROJECT_DIR$/F02a - Ti tråder med navn/F02a - Ti tråder med navn.iml" filepath="$PROJECT_DIR$/F02a - Ti tråder med navn/F02a - Ti tråder med navn.iml" />
       <module fileurl="file://$PROJECT_DIR$/F02b - Stoppe en tråd/F02b - Stoppe en tråd.iml" filepath="$PROJECT_DIR$/F02b - Stoppe en tråd/F02b - Stoppe en tråd.iml" />
       <module fileurl="file://$PROJECT_DIR$/F02c - Synchronized/F02c - Synchronized.iml" filepath="$PROJECT_DIR$/F02c - Synchronized/F02c - Synchronized.iml" />
@@ -11,7 +11,9 @@
       <module fileurl="file://$PROJECT_DIR$/F04 - Lock og Condition/F04 - Lock og Condition.iml" filepath="$PROJECT_DIR$/F04 - Lock og Condition/F04 - Lock og Condition.iml" />
       <module fileurl="file://$PROJECT_DIR$/F05 - Callable Future/F05 - Callable Future.iml" filepath="$PROJECT_DIR$/F05 - Callable Future/F05 - Callable Future.iml" />
       <module fileurl="file://$PROJECT_DIR$/F05 - Traadsikkerhet/F05 - Traadsikkerhet.iml" filepath="$PROJECT_DIR$/F05 - Traadsikkerhet/F05 - Traadsikkerhet.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Hello_DAT108_h22/Hello_DAT108_h221.iml" filepath="$PROJECT_DIR$/Hello_DAT108_h22/Hello_DAT108_h221.iml" />
+      <module fileurl="file://$PROJECT_DIR$/F06 - Last ned til timen/F06 - Last ned til timen.iml" filepath="$PROJECT_DIR$/F06 - Last ned til timen/F06 - Last ned til timen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/F07 - Last ned til timen/F07 - Last ned til timen.iml" filepath="$PROJECT_DIR$/F07 - Last ned til timen/F07 - Last ned til timen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hello_DAT108_h22/Hello_DAT108_h22.iml" filepath="$PROJECT_DIR$/Hello_DAT108_h22/Hello_DAT108_h22.iml" />
       <module fileurl="file://$PROJECT_DIR$/dat108-h2022.iml" filepath="$PROJECT_DIR$/dat108-h2022.iml" />
     </modules>
   </component>
