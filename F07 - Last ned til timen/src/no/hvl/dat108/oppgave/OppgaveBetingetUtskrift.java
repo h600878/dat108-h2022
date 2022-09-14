@@ -1,5 +1,8 @@
 package no.hvl.dat108.oppgave;
 
+import java.util.List;
+import java.util.function.Predicate;
+
 /*
  * Her er en liten oppgave dere kan prøve selv til mandag for å se
  * om dere har fått med dere hovedideen med lambda-uttrykk.
