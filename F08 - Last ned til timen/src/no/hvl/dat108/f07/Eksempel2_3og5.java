@@ -10,6 +10,7 @@ import java.util.function.Predicate;
 public class Eksempel2_3og5 {
 	
 	public static void printAll(List<Person> liste) {
+		
 		System.out.println();
 		for (Person p : liste) {
 			System.out.println(p);
@@ -17,6 +18,7 @@ public class Eksempel2_3og5 {
 	}
 	
 	public static void printLastNameStartsWithC(List<Person> liste) {
+		
 		System.out.println();
 		for (Person p : liste) {
 			if (p.getLastName().startsWith("C")) {
@@ -25,7 +27,9 @@ public class Eksempel2_3og5 {
 		}
 	}
 	
-	public static void printConditionally(List<Person> liste, Predicate<Person> pred) {
+	public static void printConditionally(List<Person> liste,
+			Predicate<Person> pred) {
+		
 		System.out.println();
 		for (Person p : liste) {
 			if (pred.test(p)) {

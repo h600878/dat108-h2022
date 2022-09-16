@@ -14,11 +14,11 @@ import java.util.function.Function;
  */
 public class Eksempel1 {
 	
-	public static List<String> tilListeAvString(List<Person> liste, ???) {
+	public static List<String> tilListeAvString(List<Person> liste, Function<Person, String> omforming) {
 		
 		List<String> resultat = new ArrayList<>();
 		for (Person p : liste) {
-			resultat.add(???);
+			resultat.add(omforming.apply(p));
 		}
 		return resultat;
 	}
@@ -32,7 +32,7 @@ public class Eksempel1 {
 				new Person("Charlotte", "Bronte", 45),
 				new Person("Matthew", "Arnold", 39));
 		
-		List<String> fornavnene = tilListeAvString(people, ???);
+		List<String> fornavnene = tilListeAvString(people, Person::getFirstName);
 		System.out.println(fornavnene);		
 	}
 
