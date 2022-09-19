@@ -1,6 +1,7 @@
 package no.hvl.dat108.f08;
 
 import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 /*
  * I dette eksemplet skal vi ...
@@ -22,16 +23,29 @@ public class Eksempel7 {
 				.forEach(System.out::println);
 
 		
-// KOM IKKE LENGER I TIMEN. FORTSETTE PÅ MANDAG ...
-		
-		
 		//For en strøm av tallene 100, 103, 106, 109, ...
 		//   skriv ut de 10 første som er delelig med 4
+		Stream.iterate(100, x -> x + 3)
+				.filter(x -> x % 4 == 0)
+				.limit(10)
+				.forEach(System.out::println);
 		System.out.println();
 
 		
 		//For en stream av strenger, skriv dem ut sortert uten duplikater
+		Stream.of("X", "A", "X", "P", "B")
+				.distinct()
+				.sorted()
+				.forEach(System.out::print);
 		System.out.println();
 		
 	}
 }
+
+
+
+
+
+
+
+

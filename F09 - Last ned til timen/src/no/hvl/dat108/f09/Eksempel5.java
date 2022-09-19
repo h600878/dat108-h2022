@@ -7,6 +7,10 @@ import java.time.LocalTime;
 import java.util.Base64;
 import java.util.stream.LongStream;
 
+/*
+ * Fikk ikke sett på. Poenget her var muligheten for parallelle strømmer
+ * for å utnytte flere kjerner/prosessorer.
+ */
 public class Eksempel5 {
 
 	public static void main(String[] args) {
@@ -27,6 +31,7 @@ public class Eksempel5 {
 	private static void mineBitcoin() {
 
 		LongStream.iterate(0, x -> x + 1)
+//				.parallel() //Her er trikset!
 				.filter(i -> hashOf(i).startsWith("0000"))
 				.limit(3)
 				.forEach(i -> System.out.println(i + " -> " + hashOf(i)));
