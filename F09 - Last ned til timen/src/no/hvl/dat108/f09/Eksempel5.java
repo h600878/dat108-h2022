@@ -9,42 +9,45 @@ import java.util.stream.LongStream;
 
 public class Eksempel5 {
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
-		System.out.println("Starter mining. Arbeider ...");
-		long starttid = System.nanoTime();
-		try {
+        System.out.println("Starter mining. Arbeider ...");
+        long starttid = System.nanoTime();
+        try {
 
-			mineBitcoin();
+            mineBitcoin();
 
-		} finally {
-			long slutttid = System.nanoTime();
-			LocalTime tidsbruk = LocalTime.ofNanoOfDay(slutttid - starttid);
-			System.out.println("Tidsforbuk = " + tidsbruk);
-		}
-	}
+        }
+        finally {
+            long slutttid = System.nanoTime();
+            LocalTime tidsbruk = LocalTime.ofNanoOfDay(slutttid - starttid);
+            System.out.println("Tidsforbuk = " + tidsbruk);
+        }
+    }
 
-	private static void mineBitcoin() {
+    private static void mineBitcoin() {
 
-		LongStream.iterate(0, x -> x + 1)
-				.filter(i -> hashOf(i).startsWith("0000"))
-				.limit(3)
-				.forEach(i -> System.out.println(i + " -> " + hashOf(i)));
-	}
+        LongStream.iterate(0, x -> x + 1)
+                .filter(i -> hashOf(i).startsWith("0000"))
+                .limit(3)
+                .forEach(i -> System.out.println(i + " -> " + hashOf(i)));
+    }
 
-	private static String hashOf(long number) {
-		byte[] bytes = null;
-		try {
-			bytes = String.valueOf(number).getBytes("UTF-8");
-		} catch (UnsupportedEncodingException e) {
-			e.printStackTrace();
-		}
-		try {
-			return Base64.getEncoder().encodeToString(
-					MessageDigest.getInstance("SHA-256").digest(bytes));
-		} catch (NoSuchAlgorithmException e) {
-			e.printStackTrace();
-		}
-		return null;
-	}
+    private static String hashOf(long number) {
+        byte[] bytes = null;
+        try {
+            bytes = String.valueOf(number).getBytes("UTF-8");
+        }
+        catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+        try {
+            return Base64.getEncoder().encodeToString(
+                    MessageDigest.getInstance("SHA-256").digest(bytes));
+        }
+        catch (NoSuchAlgorithmException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
 }
