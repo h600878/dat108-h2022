@@ -1,22 +1,20 @@
 package no.hvl.dat108.f09;
 
 import java.util.Arrays;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-import java.util.stream.Collectors;
 
 public class Eksempel4 {
 	
 	public static void main(String[] args) throws Exception {
 		
 		List<Utvikler> utviklere = Arrays.asList(
-				new Utvikler("Arne", new HashSet<>(Arrays.asList("Java", "C"))),
-				new Utvikler("Pere", new HashSet<>(Arrays.asList("Javascript", "C++"))),
-				new Utvikler("Knut", new HashSet<>(Arrays.asList("Java"))),
-				new Utvikler("Anne", new HashSet<>(Arrays.asList("Haskell", "C#", "Python"))),
-				new Utvikler("Emma", new HashSet<>(Arrays.asList("Clojure", "Ruby", "C"))),
-				new Utvikler("Lise", new HashSet<>(Arrays.asList("Java", "C"))));
+				new Utvikler("Arne", Set.of("Java", "C")),
+				new Utvikler("Pere", Set.of("Javascript", "C++")),
+				new Utvikler("Knut", Set.of("Java")),
+				new Utvikler("Anne", Set.of("Haskell", "C#", "Python")),
+				new Utvikler("Emma", Set.of("Clojure", "Ruby", "C")),
+				new Utvikler("Lise", Set.of("Java", "C")));
 
 		System.out.println(
 				"\nEn oversikt over hvilke utviklere som kan Java:");
