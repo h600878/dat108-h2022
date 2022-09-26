@@ -7,18 +7,21 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class RegistreringController {
-	
-	@GetMapping(value = "/???")
-	public String mottaRegistrering(Model model, 
-			@RequestParam(name = "???") String fornavn, 
-			@RequestParam(name = "???") String etternavn,
-			@RequestParam(name = "???") int aar) {
-		
-		Person person = new Person(fornavn, etternavn, aar);
-		
-		model.addAttribute("p", person);
-		return "kvittering";
-	}
-	
-	
+
+    // Value må være samme som action i post
+    @GetMapping(value = "/registrer")
+    public String mottaRegistrering(
+            Model model,
+            // name = ... skal være samme som name i input i skjema
+            @RequestParam(name = "fornavn") String fornavn,
+            @RequestParam(name = "etternavn") String etternavn,
+            @RequestParam(name = "aar") int aar
+    ) {
+
+        Person person = new Person(fornavn, etternavn, aar);
+
+        model.addAttribute("p", person);
+        return "kvittering";
+    }
+
 }

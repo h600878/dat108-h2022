@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="f11c-hiddenparameter" />
+        <module name="f11a-registreringsskjema" />
+        <module name="f10-hallo" />
+        <module name="f11b-primtalltest" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="f10-hallo" target="17" />
+      <module name="f11a-registreringsskjema" target="17" />
+      <module name="f11b-primtalltest" target="17" />
+      <module name="f11c-hiddenparameter" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="f10-hallo" options="-parameters" />
+      <module name="f11a-registreringsskjema" options="-parameters" />
+      <module name="f11b-primtalltest" options="-parameters" />
+      <module name="f11c-hiddenparameter" options="-parameters" />
+    </option>
+  </component>
+</project>
