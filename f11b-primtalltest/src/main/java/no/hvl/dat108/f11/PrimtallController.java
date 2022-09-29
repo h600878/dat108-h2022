@@ -12,21 +12,31 @@
  */
 package no.hvl.dat108.f11;
 
+import org.apache.commons.math3.primes.Primes;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class PrimtallController {
 	
 	@GetMapping(value = "/prime")
-	public String mottaRegistrering(Model model /*, ???*/) {
+	public String mottaRegistrering(Model model , @RequestParam int tall) {
 		
 		//Sjekk om tallet er gyldig? Hva om bruker skriver "X"
-
+		//Neste gang
+		
 		//Sjekk om det er et primtall
+		if (Primes.isPrime(tall)) {
+			//...
+		} else {
+			//...
+		}
 		
 		//Gjøre data tilgjengelig for kvittering-view
+//		model.addAttribute("tallet", tall);
+		model.addAttribute("teksten", "et primtall");
 		
 		return "kvittering";
 	}

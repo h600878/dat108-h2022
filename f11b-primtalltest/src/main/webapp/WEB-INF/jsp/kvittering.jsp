@@ -8,6 +8,6 @@
 </head>
 
 <body>
-	<p>???</p>
+	<p>${param.tall} er ${teksten}</p>
 </body>
 </html>

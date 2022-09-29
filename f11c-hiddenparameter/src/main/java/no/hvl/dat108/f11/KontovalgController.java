@@ -1,5 +1,5 @@
 /*
- * Dette er et eksempel på en Spring MVC Controller.
+d * Dette er et eksempel på en Spring MVC Controller.
  * 
  * En controller sin rolle i en web-applikasjon er å ta imot
  * requests (forespørsler) fra web-klienter (f.eks. weblesere).
