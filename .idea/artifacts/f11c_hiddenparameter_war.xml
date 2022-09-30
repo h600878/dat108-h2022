@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="f11c-hiddenparameter:war">
+    <output-path>$PROJECT_DIR$/f11c-hiddenparameter/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>f11c-hiddenparameter</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="f11c-hiddenparameter-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="f11c-hiddenparameter:war exploded" />
+    </root>
+  </artifact>
+</component>

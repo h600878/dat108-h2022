@@ -6,20 +6,20 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class DiverseController {
-	
-    @GetMapping(value = "/diverse", produces="text/plain")
+
     @ResponseBody
+    @GetMapping(value = "/diverse", produces = "text/plain")
     public String visDiverseInfo() {
-    	String svar = "...";
-        return svar;
-    }
-    
-    @GetMapping(value = "/settCookie", produces="text/plain")
-    @ResponseBody
-    public String locale() {
-    	String svar = "...";
+        String svar = "...";
         return svar;
     }
 
-   
+    @ResponseBody
+    @GetMapping(value = "/settCookie", produces = "text/plain")
+    public String locale() {
+        String svar = "...";
+        return svar;
+    }
+
+
 }
