@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="f12-last-ned-til-timen:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/f12_last_ned_til_timen_Web_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="f12-last-ned-til-timen/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="f12-last-ned-til-timen" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

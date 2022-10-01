@@ -7,10 +7,10 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/f11a-registreringsskjema/pom.xml" />
-        <option value="$PROJECT_DIR$/f10-hallo/pom.xml" />
         <option value="$PROJECT_DIR$/f11b-primtalltest/pom.xml" />
         <option value="$PROJECT_DIR$/f11c-hiddenparameter/pom.xml" />
         <option value="$PROJECT_DIR$/f12-last-ned-til-timen/pom.xml" />
+        <option value="$PROJECT_DIR$/f12-gjort-i-timen/pom.xml" />
       </list>
     </option>
   </component>

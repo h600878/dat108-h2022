@@ -1,9 +1,6 @@
 package no.hvl.dat108.f12;
 
-import javax.validation.constraints.Max;
-import javax.validation.constraints.Past;
-import javax.validation.constraints.Pattern;
-import javax.validation.constraints.Size;
+import javax.validation.constraints.*;
 import java.time.LocalDate;
 
 public class Person {
@@ -15,10 +12,11 @@ public class Person {
     private String mobil;
 
     @Max(value = 250, message = "Du kan ikke være høyere enn 250 cm") // Krav til maks verdi
+    @Min(value = 50, message = "Du kan ikke være lavere enn 50 cm")
     private int hoydecm;
 
-    @Past(message = "Du må være født i fortiden") // Dato må være i fortiden
-    private LocalDate fdato;
+//    @Past(message = "Du må være født i fortiden") // Dato må være i fortiden
+    private String fdato; // FIXME virker ikke med LocalDate
 
     public String getNavn() {
         return navn;
@@ -44,11 +42,11 @@ public class Person {
         this.hoydecm = hoydecm;
     }
 
-    public LocalDate getFdato() {
+    public String getFdato() {
         return fdato;
     }
 
-    public void setFdato(LocalDate fdato) {
+    public void setFdato(String fdato) {
         this.fdato = fdato;
     }
 

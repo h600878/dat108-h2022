@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="f11c-hiddenparameter" />
+        <module name="f12-gjort-i-timen" />
         <module name="f11a-registreringsskjema" />
         <module name="f10-hallo" />
         <module name="f11b-primtalltest" />
@@ -18,6 +19,7 @@
       <module name="f11a-registreringsskjema" target="17" />
       <module name="f11b-primtalltest" target="17" />
       <module name="f11c-hiddenparameter" target="17" />
+      <module name="f12-gjort-i-timen" target="17" />
       <module name="f12-last-ned-til-timen" target="17" />
     </bytecodeTargetLevel>
   </component>
@@ -27,6 +29,7 @@
       <module name="f11a-registreringsskjema" options="-parameters" />
       <module name="f11b-primtalltest" options="-parameters" />
       <module name="f11c-hiddenparameter" options="-parameters" />
+      <module name="f12-gjort-i-timen" options="-parameters" />
       <module name="f12-last-ned-til-timen" options="-parameters" />
     </option>
   </component>
