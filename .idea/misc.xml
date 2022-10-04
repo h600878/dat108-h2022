@@ -11,6 +11,8 @@
         <option value="$PROJECT_DIR$/f11c-hiddenparameter/pom.xml" />
         <option value="$PROJECT_DIR$/f12-last-ned-til-timen/pom.xml" />
         <option value="$PROJECT_DIR$/f12-gjort-i-timen/pom.xml" />
+        <option value="$PROJECT_DIR$/f13a-request-headere/pom.xml" />
+        <option value="$PROJECT_DIR$/f13b-post-redirect-get/pom.xml" />
       </list>
     </option>
   </component>

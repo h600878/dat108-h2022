@@ -11,5 +11,9 @@
     <file url="file://$PROJECT_DIR$/f12-gjort-i-timen/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/f12-last-ned-til-timen/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/f12-last-ned-til-timen/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/f13a-request-headere/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/f13a-request-headere/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/f13b-post-redirect-get/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/f13b-post-redirect-get/src/main/resources" charset="UTF-8" />
   </component>
 </project>

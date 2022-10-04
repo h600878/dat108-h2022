@@ -22,6 +22,8 @@
       <module fileurl="file://$PROJECT_DIR$/f11c-hiddenparameter/f11c-hiddenparameter.iml" filepath="$PROJECT_DIR$/f11c-hiddenparameter/f11c-hiddenparameter.iml" />
       <module fileurl="file://$PROJECT_DIR$/f12-gjort-i-timen/f12-gjort-i-timen.iml" filepath="$PROJECT_DIR$/f12-gjort-i-timen/f12-gjort-i-timen.iml" />
       <module fileurl="file://$PROJECT_DIR$/f12-last-ned-til-timen/f12-last-ned-til-timen.iml" filepath="$PROJECT_DIR$/f12-last-ned-til-timen/f12-last-ned-til-timen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/f13a-request-headere/f13a-request-headere.iml" filepath="$PROJECT_DIR$/f13a-request-headere/f13a-request-headere.iml" />
+      <module fileurl="file://$PROJECT_DIR$/f13b-post-redirect-get/f13b-post-redirect-get.iml" filepath="$PROJECT_DIR$/f13b-post-redirect-get/f13b-post-redirect-get.iml" />
     </modules>
   </component>
 </project>

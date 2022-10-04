@@ -12,7 +12,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 @Controller
 public class BestillingController {
-	
+
 //	@PostMapping("/bestilling")
 //	public String bestillUtenPrg(@RequestParam String vare, Model model) {
 //		System.err.println("Uten PRG: Det blir nå bestilt en " + vare);
@@ -21,34 +21,41 @@ public class BestillingController {
 //		return "kvitteringView";
 //	}
 
-	@PostMapping("/bestilling")
-	public String bestillMedPrg(@RequestParam String vare, RedirectAttributes ra, 
-			HttpSession session, Model model) {
-		System.err.println("Med PRG:  Det blir nå bestilt en " + vare);
-		
-		//https://www.baeldung.com/spring-web-flash-attributes
-		//Alt. 0b
-		model.addAttribute("MAvare", vare);
-		//Alt. 1
-		session.setAttribute("SAvare", vare);
-		//Alt. 2
-		ra.addAttribute("RAvare", vare);
-		//Alt. 3
-		ra.addFlashAttribute("RFAvare", vare);
-		
-		return "redirect:kvittering";
-	}
+    @PostMapping("/bestilling")
+    public String bestillMedPrg(@RequestParam String vare, RedirectAttributes ra, HttpSession session, Model model) {
+        System.err.println("Med PRG:  Det blir nå bestilt en " + vare);
 
-	@GetMapping("/kvittering")
-	public String kvittering(RedirectAttributes ra,
-			HttpServletRequest request,
-			HttpSession session, Model model) {
-		
-//		System.err.println("MAvare  : " + model.getAttribute("MAvare"));
-//		System.err.println("SAvare  : " + session.getAttribute("SAvare"));
-//		System.err.println("RAvare  : " + ra.getAttribute("RAvare"));
-//		System.err.println("RFAvare : " + RequestContextUtils.getInputFlashMap(request).get("RFAvare"));
-		
-		return "kvitteringView";
-	}
+        // https://www.baeldung.com/spring-web-flash-attributes
+        // Alt. 0b - Virker ikke i dette tilfellet, da det kun eksisterer i denne metoden
+        model.addAttribute("MAvare", vare);
+        // Alt. 1 - Lagerer dataene i denne sesjonen
+        // Kan lagre dataene for lenge, hvis brukeren er på nettsiden lenge
+        session.setAttribute("SAvare", vare);
+        // Alt. 2 - Gjør om varen til et parameter i de neste requestene
+        ra.addAttribute("RAvare", vare);
+        // Alt. 3 - Samme som over, men funker kun for neste redirect
+        ra.addFlashAttribute("RFAvare", vare);
+
+        // Videresender til /kvittering
+        return "redirect:kvittering";
+    }
+
+    /**
+     * Lager en GET-request med parameter "String vare"
+     * @param ra
+     * @param request
+     * @param session
+     * @param model
+     * @return
+     */
+    @GetMapping("/kvittering")
+    public String kvittering(RedirectAttributes ra, HttpServletRequest request, HttpSession session, Model model) {
+
+        System.err.println("MAvare  : " + model.getAttribute("MAvare")); // null
+        System.err.println("SAvare  : " + session.getAttribute("SAvare")); // vare
+        System.err.println("RAvare  : " + ra.getAttribute("RAvare")); // vare
+//        System.err.println("RFAvare : " + RequestContextUtils.getInputFlashMap(request).get("RFAvare"));
+
+        return "kvitteringView";
+    }
 }

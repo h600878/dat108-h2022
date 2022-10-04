@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Bestilling</title>
-</head>
-<body>
-	<form action="bestilling" method="post">
-		Hva vil du bestille? <input type="text" name="vare" />
-	</form>
-</body>
+    <head>
+        <title>Bestilling</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div>
+            <!-- Sender en POST-request til /kvittering -->
+            <form action="bestilling" method="post">
+                <label>Hva vil du bestille? <input type="text" name="vare" /></label>
+            </form>
+        </div>
+    </body>
 </html>
