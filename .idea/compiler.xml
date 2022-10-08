@@ -14,6 +14,7 @@
         <module name="f11b-primtalltest" />
         <module name="f13a-request-headere" />
         <module name="f12-last-ned-til-timen" />
+        <module name="f13d-cookies" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -25,6 +26,7 @@
       <module name="f12-last-ned-til-timen" target="17" />
       <module name="f13a-request-headere" target="17" />
       <module name="f13b-post-redirect-get" target="17" />
+      <module name="f13d-cookies" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -37,6 +39,7 @@
       <module name="f12-last-ned-til-timen" options="-parameters" />
       <module name="f13a-request-headere" options="-parameters" />
       <module name="f13b-post-redirect-get" options="-parameters" />
+      <module name="f13d-cookies" options="-parameters" />
     </option>
   </component>
 </project>

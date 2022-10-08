@@ -25,6 +25,7 @@
       <module fileurl="file://$PROJECT_DIR$/f13a-request-headere/f13a-request-headere.iml" filepath="$PROJECT_DIR$/f13a-request-headere/f13a-request-headere.iml" />
       <module fileurl="file://$PROJECT_DIR$/f13b-post-redirect-get/f13b-post-redirect-get.iml" filepath="$PROJECT_DIR$/f13b-post-redirect-get/f13b-post-redirect-get.iml" />
       <module fileurl="file://$PROJECT_DIR$/f13c-regexp/f13c-regexp.iml" filepath="$PROJECT_DIR$/f13c-regexp/f13c-regexp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/f13d-cookies/f13d-cookies.iml" filepath="$PROJECT_DIR$/f13d-cookies/f13d-cookies.iml" />
     </modules>
   </component>
 </project>

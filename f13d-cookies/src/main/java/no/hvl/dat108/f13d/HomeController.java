@@ -14,24 +14,25 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class HomeController {
 
-	DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy_HH:mm:ss");
+    private final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy_HH:mm:ss");
 
-	@GetMapping("/home")
-	public String home(
-			@CookieValue(name="sisteBesok", required=false) String sisteBesok,
-			Model model, HttpServletResponse response) {
-		
-		if(sisteBesok == null) { //evt. kan man bruke Optional
-			model.addAttribute("melding", "Hei. Velkommen første gang til oss.");
-		} else {
-			model.addAttribute("melding", "Hei. Ser du var sist inne " + sisteBesok);
-		}
-		
-		Cookie c = new Cookie("sisteBesok", LocalDateTime.now().format(formatter));
-		c.setMaxAge(10);
-		response.addCookie(c);
-		
-		return "homeView";
-	}
+    @GetMapping("/home")
+    public String home(
+            @CookieValue(name = "sisteBesok", required = false) String sisteBesok,
+            Model model, HttpServletResponse response) {
+
+        if (sisteBesok == null) { // evt. kan man bruke Optional
+            model.addAttribute("melding", "Hei. Velkommen første gang til oss.");
+        }
+        else {
+            model.addAttribute("melding", "Hei. Ser du var sist inne " + sisteBesok);
+        }
+
+        Cookie c = new Cookie("sisteBesok", LocalDateTime.now().format(formatter));
+        c.setMaxAge(10);
+        response.addCookie(c);
+
+        return "homeView";
+    }
 
 }
