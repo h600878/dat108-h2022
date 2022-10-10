@@ -8,7 +8,8 @@
     </head>
 
     <body>
-        <p>Du er innlogget som ${username}<br>
+        <%-- c:out skriver bare ut teksten, ikke kjører kode om brukeren skriver inn det --%>
+        <p>Du er innlogget som <c:out value="${username}" /><br>
            Totalt i handlekurv: kr ${cart.total}</p>
         <table>
             <tr>
@@ -17,7 +18,7 @@
                 <th>Antall</th>
                 <th>Beløp</th>
             </tr>
-            <%-- En løkke som looper igjennom alle elementene i cart.items--%>
+            <%-- En løkke som looper igjennom alle elementene i cart.items. item representerer hvert element i løkken --%>
             <c:forEach var="item" items="${cart.items}">
                 <tr>
                     <td>${item.name}</td>
