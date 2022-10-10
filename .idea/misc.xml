@@ -14,6 +14,8 @@
         <option value="$PROJECT_DIR$/f13a-request-headere/pom.xml" />
         <option value="$PROJECT_DIR$/f13b-post-redirect-get/pom.xml" />
         <option value="$PROJECT_DIR$/f13d-cookies/pom.xml" />
+        <option value="$PROJECT_DIR$/f15-sesjoner-innlogging-lastned/pom.xml" />
+        <option value="$PROJECT_DIR$/f15-sesjoner-innlogging/pom.xml" />
       </list>
     </option>
   </component>
