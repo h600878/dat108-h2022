@@ -10,6 +10,7 @@
         <module name="f12-gjort-i-timen" />
         <module name="f13b-post-redirect-get" />
         <module name="f11a-registreringsskjema" />
+        <module name="f15-sesjoner-innlogging-losning" />
         <module name="f10-hallo" />
         <module name="f11b-primtalltest" />
         <module name="f13a-request-headere" />
@@ -29,6 +30,7 @@
       <module name="f13b-post-redirect-get" target="17" />
       <module name="f13d-cookies" target="17" />
       <module name="f15-sesjoner-innlogging" target="17" />
+      <module name="f15-sesjoner-innlogging-losning" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -43,6 +45,7 @@
       <module name="f13b-post-redirect-get" options="-parameters" />
       <module name="f13d-cookies" options="-parameters" />
       <module name="f15-sesjoner-innlogging" options="-parameters" />
+      <module name="f15-sesjoner-innlogging-losning" options="-parameters" />
     </option>
   </component>
 </project>
