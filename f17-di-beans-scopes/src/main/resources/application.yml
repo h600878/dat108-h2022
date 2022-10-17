@@ -2,13 +2,10 @@
 #   https://www.cloudbees.com/blog/yaml-tutorial-everything-you-need-get-started
 
 spring:
-   mvc:
-      view:
-         prefix: /WEB-INF/jsp/
-         suffix: .jsp
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
 app:
-   melding1: Hallo
-   melding2: ÆØÅ æøå
-
-    
-
+  melding1: Hallo
+  melding2: ÆØÅ æøå

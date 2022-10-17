@@ -2,6 +2,7 @@
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/f11c-hiddenparameter" />
+    <file type="web" url="file://$PROJECT_DIR$/f17-di-beans-scopes" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -17,6 +18,7 @@
         <option value="$PROJECT_DIR$/f15-sesjoner-innlogging-lastned/pom.xml" />
         <option value="$PROJECT_DIR$/f15-sesjoner-innlogging/pom.xml" />
         <option value="$PROJECT_DIR$/f15-sesjoner-innlogging-losning/pom.xml" />
+        <option value="$PROJECT_DIR$/f17-di-beans-scopes/pom.xml" />
       </list>
     </option>
   </component>

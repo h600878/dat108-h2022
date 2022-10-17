@@ -28,6 +28,7 @@
       <module fileurl="file://$PROJECT_DIR$/f13d-cookies/f13d-cookies.iml" filepath="$PROJECT_DIR$/f13d-cookies/f13d-cookies.iml" />
       <module fileurl="file://$PROJECT_DIR$/f15-sesjoner-innlogging/f15-sesjoner-innlogging.iml" filepath="$PROJECT_DIR$/f15-sesjoner-innlogging/f15-sesjoner-innlogging.iml" />
       <module fileurl="file://$PROJECT_DIR$/f15-sesjoner-innlogging-losning/f15-sesjoner-innlogging-losning.iml" filepath="$PROJECT_DIR$/f15-sesjoner-innlogging-losning/f15-sesjoner-innlogging-losning.iml" />
+      <module fileurl="file://$PROJECT_DIR$/f17-di-beans-scopes/f17-di-beans-scopes.iml" filepath="$PROJECT_DIR$/f17-di-beans-scopes/f17-di-beans-scopes.iml" />
     </modules>
   </component>
 </project>
