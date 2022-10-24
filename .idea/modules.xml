@@ -30,7 +30,7 @@
       <module fileurl="file://$PROJECT_DIR$/f15-sesjoner-innlogging-losning/f15-sesjoner-innlogging-losning.iml" filepath="$PROJECT_DIR$/f15-sesjoner-innlogging-losning/f15-sesjoner-innlogging-losning.iml" />
       <module fileurl="file://$PROJECT_DIR$/f17-di-beans-scopes/f17-di-beans-scopes.iml" filepath="$PROJECT_DIR$/f17-di-beans-scopes/f17-di-beans-scopes.iml" />
       <module fileurl="file://$PROJECT_DIR$/f19a-avdeling-crudrepo/f19a-avdeling-crudrepo.iml" filepath="$PROJECT_DIR$/f19a-avdeling-crudrepo/f19a-avdeling-crudrepo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/f19b-ansatt-avdeling-service/jpa-embedded-at-localhost.iml" filepath="$PROJECT_DIR$/f19b-ansatt-avdeling-service/jpa-embedded-at-localhost.iml" />
+      <module fileurl="file://$PROJECT_DIR$/f19b-ansatt-avdeling-service/f19b-ansatt-avdeling-service.iml" filepath="$PROJECT_DIR$/f19b-ansatt-avdeling-service/f19b-ansatt-avdeling-service.iml" />
     </modules>
   </component>
 </project>
