@@ -9,6 +9,7 @@
         <module name="f11c-hiddenparameter" />
         <module name="f12-gjort-i-timen" />
         <module name="f11a-registreringsskjema" />
+        <module name="f15-sesjoner-innlogging-losning" />
         <module name="f11b-primtalltest" />
         <module name="f12-last-ned-til-timen" />
         <module name="f13b-post-redirect-get" />
@@ -17,8 +18,6 @@
         <module name="f19a-avdeling-crudrepo" />
         <module name="f19b-ansatt-avdeling-service" />
         <module name="f13a-request-headere" />
-        <module name="f15-sesjoner-innlogging (2)" />
-        <module name="f15-sesjoner-innlogging (1)" />
         <module name="f13d-cookies" />
       </profile>
     </annotationProcessing>
