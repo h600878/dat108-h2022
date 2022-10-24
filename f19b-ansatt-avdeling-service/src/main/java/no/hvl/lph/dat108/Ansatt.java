@@ -11,67 +11,64 @@ import javax.persistence.Table;
 @Entity
 @Table(schema = "ansatt_avdeling")
 public class Ansatt {
-	
-	@Id
-	@GeneratedValue(strategy= GenerationType.IDENTITY)
-	private Integer id ;
 
-	private String navn;
-	private String kjonn;
-	private int manedslonn;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
 
-	@ManyToOne
+    private String navn;
+    private String kjonn;
+    private int manedslonn;
+
+    @ManyToOne
     @JoinColumn(name = "avdeling_id")
-	private Avdeling avdeling;
-	
-	@Override
-	public String toString() {
-		return "Ansatt [id=" + id + ", navn=" + navn + ", kjonn=" + kjonn + ", manedslonn=" + manedslonn + ", avdeling="
-				+ avdeling + "]";
-	}
+    private Avdeling avdeling;
 
 
+    public Integer getId() {
+        return id;
+    }
 
-	public Integer getId() {
-		return id;
-	}
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
-	public void setId(Integer id) {
-		this.id = id;
-	}
+    public String getNavn() {
+        return navn;
+    }
 
-	public String getNavn() {
-		return navn;
-	}
+    public void setNavn(String navn) {
+        this.navn = navn;
+    }
 
-	public void setNavn(String navn) {
-		this.navn = navn;
-	}
+    public String getKjonn() {
+        return kjonn;
+    }
 
-	public String getKjonn() {
-		return kjonn;
-	}
+    public void setKjonn(String kjonn) {
+        this.kjonn = kjonn;
+    }
 
-	public void setKjonn(String kjonn) {
-		this.kjonn = kjonn;
-	}
+    public int getManedslonn() {
+        return manedslonn;
+    }
 
-	public int getManedslonn() {
-		return manedslonn;
-	}
+    public void setManedslonn(int manedslonn) {
+        this.manedslonn = manedslonn;
+    }
 
-	public void setManedslonn(int manedslonn) {
-		this.manedslonn = manedslonn;
-	}
+    public Avdeling getAvdeling() {
+        return avdeling;
+    }
 
-	public Avdeling getAvdeling() {
-		return avdeling;
-	}
+    public void setAvdeling(Avdeling avdeling) {
+        this.avdeling = avdeling;
+    }
 
-	public void setAvdeling(Avdeling avdeling) {
-		this.avdeling = avdeling;
-	}
-	
-	
-	
+    @Override
+    public String toString() {
+        return "Ansatt [id=" + id + ", navn=" + navn + ", kjonn=" + kjonn + ", manedslonn=" + manedslonn +
+                ", avdeling=" + avdeling + "]";
+    }
+
 }

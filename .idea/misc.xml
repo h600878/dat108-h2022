@@ -19,10 +19,15 @@
         <option value="$PROJECT_DIR$/f15-sesjoner-innlogging/pom.xml" />
         <option value="$PROJECT_DIR$/f15-sesjoner-innlogging-losning/pom.xml" />
         <option value="$PROJECT_DIR$/f17-di-beans-scopes/pom.xml" />
+        <option value="$PROJECT_DIR$/f19a-avdeling-crudrepo/pom.xml" />
+        <option value="$PROJECT_DIR$/f19b-ansatt-avdeling-service/pom.xml" />
       </list>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="18" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="jpab" />
   </component>
 </project>

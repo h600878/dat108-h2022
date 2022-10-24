@@ -10,39 +10,54 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class MyController {
-	
-    @Autowired 
+
+    /**
+     * Henter databasehjelper
+     */
+    @Autowired
     private FirmaService aService;
 
+    /**
+     *
+     * @return Alle avdelinger
+     */
+    @ResponseBody
     @GetMapping(value = "/avdelinger")
-    @ResponseBody
     public List<Avdeling> avdelinger() {
-    	return aService.finnAlleAvdelinger();
-    }
-    
-    @GetMapping(value = "/ansatte")
-    @ResponseBody
-    public List<Ansatt> ansatte() {
-    	return aService.finnAlleAnsatte();
-    }
-    
-    @GetMapping(value = "/snittlonnIT", produces = "text/plain")
-    @ResponseBody
-    public String snittlonn() {
-    	return "" + aService.snittlonn("IT");
+        return aService.finnAlleAvdelinger();
     }
 
-    @GetMapping(value = "/erikFlytter", produces = "text/plain")
+    /**
+     *
+     * @return En liste over alle ansatte
+     */
     @ResponseBody
-    public String erikFlytter(@RequestParam String tilAvdeling) {
-    	
-    	aService.erikFlytterTil(tilAvdeling);
-    	
-    	Ansatt erik = aService.finnAnsattMedNavn("Erik");
-    	if(erik != null) {
-        	return "" + erik;
-    	}
-    	return "NOE GIKK GALT!";
+    @GetMapping(value = "/ansatte")
+    public List<Ansatt> ansatte() {
+        return aService.finnAlleAnsatte();
     }
-    
+
+    /**
+     *
+     * @return Snittlønnen på IT avdelingen
+     */
+    @ResponseBody
+    @GetMapping(value = "/snittlonnIT", produces = "text/plain")
+    public String snittlonn() {
+        return "" + aService.snittlonn("IT");
+    }
+
+    @ResponseBody
+    @GetMapping(value = "/erikFlytter", produces = "text/plain")
+    public String erikFlytter(@RequestParam String tilAvdeling) {
+
+        aService.erikFlytterTil(tilAvdeling);
+
+        Ansatt erik = aService.finnAnsattMedNavn("Erik");
+        if (erik != null) {
+            return "" + erik;
+        }
+        return "NOE GIKK GALT!";
+    }
+
 }

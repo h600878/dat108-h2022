@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="f17-di-beans-scopes:war">
+    <output-path>$PROJECT_DIR$/f17-di-beans-scopes/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>f17-di-beans-scopes</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="f17-di-beans-scopes-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="f17-di-beans-scopes:war exploded" />
+    </root>
+  </artifact>
+</component>

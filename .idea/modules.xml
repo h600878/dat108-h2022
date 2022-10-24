@@ -29,6 +29,8 @@
       <module fileurl="file://$PROJECT_DIR$/f15-sesjoner-innlogging/f15-sesjoner-innlogging.iml" filepath="$PROJECT_DIR$/f15-sesjoner-innlogging/f15-sesjoner-innlogging.iml" />
       <module fileurl="file://$PROJECT_DIR$/f15-sesjoner-innlogging-losning/f15-sesjoner-innlogging-losning.iml" filepath="$PROJECT_DIR$/f15-sesjoner-innlogging-losning/f15-sesjoner-innlogging-losning.iml" />
       <module fileurl="file://$PROJECT_DIR$/f17-di-beans-scopes/f17-di-beans-scopes.iml" filepath="$PROJECT_DIR$/f17-di-beans-scopes/f17-di-beans-scopes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/f19a-avdeling-crudrepo/f19a-avdeling-crudrepo.iml" filepath="$PROJECT_DIR$/f19a-avdeling-crudrepo/f19a-avdeling-crudrepo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/f19b-ansatt-avdeling-service/jpa-embedded-at-localhost.iml" filepath="$PROJECT_DIR$/f19b-ansatt-avdeling-service/jpa-embedded-at-localhost.iml" />
     </modules>
   </component>
 </project>
