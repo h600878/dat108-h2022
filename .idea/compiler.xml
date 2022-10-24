@@ -9,16 +9,16 @@
         <module name="f11c-hiddenparameter" />
         <module name="f12-gjort-i-timen" />
         <module name="f11a-registreringsskjema" />
-        <module name="f15-sesjoner-innlogging-losning" />
         <module name="f11b-primtalltest" />
         <module name="f12-last-ned-til-timen" />
-        <module name="f15-sesjoner-innlogging" />
         <module name="f13b-post-redirect-get" />
         <module name="f17-di-beans-scopes" />
         <module name="f10-hallo" />
         <module name="f19a-avdeling-crudrepo" />
         <module name="f19b-ansatt-avdeling-service" />
         <module name="f13a-request-headere" />
+        <module name="f15-sesjoner-innlogging (2)" />
+        <module name="f15-sesjoner-innlogging (1)" />
         <module name="f13d-cookies" />
       </profile>
     </annotationProcessing>
@@ -33,6 +33,8 @@
       <module name="f13b-post-redirect-get" target="17" />
       <module name="f13d-cookies" target="17" />
       <module name="f15-sesjoner-innlogging" target="17" />
+      <module name="f15-sesjoner-innlogging (1)" target="17" />
+      <module name="f15-sesjoner-innlogging (2)" target="17" />
       <module name="f15-sesjoner-innlogging-losning" target="17" />
       <module name="f17-di-beans-scopes" target="17" />
       <module name="f19a-avdeling-crudrepo" target="17" />
@@ -51,6 +53,8 @@
       <module name="f13b-post-redirect-get" options="-parameters" />
       <module name="f13d-cookies" options="-parameters" />
       <module name="f15-sesjoner-innlogging" options="-parameters" />
+      <module name="f15-sesjoner-innlogging (1)" options="-parameters" />
+      <module name="f15-sesjoner-innlogging (2)" options="-parameters" />
       <module name="f15-sesjoner-innlogging-losning" options="-parameters" />
       <module name="f17-di-beans-scopes" options="-parameters" />
       <module name="f19a-avdeling-crudrepo" options="-parameters" />

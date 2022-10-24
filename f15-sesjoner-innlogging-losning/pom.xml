@@ -10,7 +10,7 @@
 
 
 	<groupId>no.hvl.dat108</groupId>
-	<artifactId>f15-sesjoner-innlogging</artifactId>
+	<artifactId>f15-sesjoner-innlogging-losning</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging> <!-- Default er jar -->
 
