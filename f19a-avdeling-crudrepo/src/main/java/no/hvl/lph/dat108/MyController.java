@@ -23,9 +23,12 @@ public class MyController {
     @GetMapping(value = "/avdpaaid", produces = "text/plain")
     @ResponseBody
     public String avdpaaid(@RequestParam int id) {
-    	return avdelingRepo.findById(id).toString(); //Optional<Avdeling> | Optional.empty
-//    	return avdelingRepo.getById(id).toString();  //Avdeling | EntityNotFoundException
+//    	return avdelingRepo.findById(id).toString(); //Optional<Avdeling> | Optional.empty
+    	return avdelingRepo.getById(id).toString();  //Avdeling | EntityNotFoundException
     }
+    
+    
+    
     
     @GetMapping(value = "/avdpaanavn", produces = "text/plain")
     @ResponseBody
