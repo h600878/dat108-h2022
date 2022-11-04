@@ -7,8 +7,8 @@ import java.util.List;
 
 public class Filhjelper {
 
-	public static List<String> lesInnPassordFraFil(String filnavn) throws IOException {
-		return Files.lines(Paths.get(filnavn)).toList();
-	}
+    public static List<String> lesInnPassordFraFil(String filnavn) throws IOException {
+        return Files.lines(Paths.get(filnavn)).toList();
+    }
 
 }
