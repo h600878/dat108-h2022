@@ -28,21 +28,22 @@ public class PassordIWebapp {
         final String brukernavn = "Per";
         final String passord = "1234567890";
 
-        // En en doPost() på serveren gjøres dette ...
+        /*
+         En en doPost() på serveren gjøres dette ...
+         Validerer brukernavn og passord
+         Her bør man kanskje kreve at passordet:
+         - Er over en viss lengde, f.eks. 8 tegn
+         - Ikke finnes i liste over x mest brukte passord
+         ...
+         Oppretter Bruker-objekt
+         NB! Slik Bruker-klassen og konstruktøren til Bruker er laget
+             er det IKKE passordet i klartekst som blir lagret!, men
+             et tilfeldig salt og hashet passord.
+             ALDRI lagre passord i klartekst!!!
+             Det er mulig at det hadde vært bedre om konstruktøren hadde
+             brukernavn, salt og hash som parametre dirtekte.
+        */
 
-        // Validerer brukernavn og passord
-        // Her bør man kanskje kreve at passordet:
-        // - Er over en viss lengde, f.eks. 8 tegn
-        // - Ikke finnes i liste over x mest brukte passord
-        // ...
-
-        // Oppretter Bruker-objekt
-        // NB! Slik Bruker-klassen og konstruktøren til Bruker er laget
-        //     er det IKKE passordet i klartekst som blir lagret!, men
-        //     et tilfeldig salt og hashet passord.
-        //     ALDRI lagre passord i klartekst!!!
-        //     Det er mulig at det hadde vært bedre om konstruktøren hadde
-        //     brukernavn, salt og hash som parametre dirtekte.
         final Bruker bruker = new Bruker(brukernavn, passord);
 
         // Litt utskrift ...
@@ -57,8 +58,8 @@ public class PassordIWebapp {
 
         // Nå prøver bruker å logge inn igjen
 //		String loginnBrukernavn = "Per";
-        final String loginnPassord = "hallo"; //Feil passord
-//		String loginnPassord = "1234567890"; //Riktig passord
+//        final String loginnPassord = "hallo"; // Feil passord
+        final String loginnPassord = "1234567890"; // Riktig passord
 
         // Bruker med brukernavn "Per" blir hentet fra databasen
 

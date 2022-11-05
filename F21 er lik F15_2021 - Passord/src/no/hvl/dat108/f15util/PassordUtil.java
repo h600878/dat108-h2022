@@ -47,7 +47,7 @@ public class PassordUtil {
      */
     public static String hashMedSalt(String passord, String salt) {
 
-        if (passord == null || salt == null) { //Burde validert skikkelig!!
+        if (passord == null || salt == null) { // Burde validert skikkelig!!
             throw new IllegalArgumentException();
         }
 
@@ -56,7 +56,7 @@ public class PassordUtil {
 
         byte[] keyhash = null;
         try {
-            PBEKeySpec pks = new PBEKeySpec(passchar, saltbytes, 1000, 256);
+            PBEKeySpec pks = new PBEKeySpec(passchar, saltbytes, 1_000, 256);
             SecretKeyFactory skf = SecretKeyFactory.getInstance("PBKDF2WithHmacSHA1");
             keyhash = skf.generateSecret(pks).getEncoded();
 
