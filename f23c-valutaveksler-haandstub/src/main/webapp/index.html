@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Forms and input examples</title>
+</head>
+<body>
+<form action="valutaveksling" method="get">
+  <fieldset>
+    <legend>Valutagreier</legend>
+    <p>Beløp: <input type="text" name="amount" />
+    <select name="fromCurrency">
+        <option value="NOK" selected="selected">NOK</option>
+        <option value="EUR">EUR</option>
+        <option value="USD">USD</option>
+        <option value="GBP">GBP</option>
+    </select> </p>   
+    Skal veksles til:<select name="toCurrency">
+        <option value="NOK">NOK</option>
+        <option value="EUR" selected="selected">EUR</option>
+        <option value="USD">USD</option>
+        <option value="GBP">GBP</option>
+    </select>    
+    <p><input type="submit" value="Beregn" /></p>
+  </fieldset>
+</form>
+</body>
+</html>
