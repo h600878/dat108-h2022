@@ -32,6 +32,10 @@
       <module fileurl="file://$PROJECT_DIR$/f17-di-beans-scopes/f17-di-beans-scopes.iml" filepath="$PROJECT_DIR$/f17-di-beans-scopes/f17-di-beans-scopes.iml" />
       <module fileurl="file://$PROJECT_DIR$/f19a-avdeling-crudrepo/f19a-avdeling-crudrepo.iml" filepath="$PROJECT_DIR$/f19a-avdeling-crudrepo/f19a-avdeling-crudrepo.iml" />
       <module fileurl="file://$PROJECT_DIR$/f19b-ansatt-avdeling-service/f19b-ansatt-avdeling-service.iml" filepath="$PROJECT_DIR$/f19b-ansatt-avdeling-service/f19b-ansatt-avdeling-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/f23a-bmikalkulator-testbarhet/f23a-bmikalkulator-testbarhet.iml" filepath="$PROJECT_DIR$/f23a-bmikalkulator-testbarhet/f23a-bmikalkulator-testbarhet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/f23b-teste-bean-validering/f23b-teste-bean-validering.iml" filepath="$PROJECT_DIR$/f23b-teste-bean-validering/f23b-teste-bean-validering.iml" />
+      <module fileurl="file://$PROJECT_DIR$/f23c-valutaveksler-haandstub/f23c-valutaveksler-haandstub.iml" filepath="$PROJECT_DIR$/f23c-valutaveksler-haandstub/f23c-valutaveksler-haandstub.iml" />
+      <module fileurl="file://$PROJECT_DIR$/f23d-mock-repo-using-mockito/f23d-mock-repo-using-mockito.iml" filepath="$PROJECT_DIR$/f23d-mock-repo-using-mockito/f23d-mock-repo-using-mockito.iml" />
     </modules>
   </component>
 </project>

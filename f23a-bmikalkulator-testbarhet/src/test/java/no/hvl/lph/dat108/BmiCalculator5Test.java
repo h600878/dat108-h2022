@@ -7,9 +7,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
 public class BmiCalculator5Test {
-    
-    private BmiCalculator5 bmiCalc = new BmiCalculator5(); 
-    
+
+    private final BmiCalculator5 bmiCalc = new BmiCalculator5();
+
     @Test
     public void bmiPaaAttenKommaFireSkalVaereUndervekt() {
         assertEquals(UNDERVEKT, bmiCalc.beregnVektklasse(18.4));
@@ -19,9 +19,9 @@ public class BmiCalculator5Test {
     public void bmiPaaAttenKommaFemSkalVaereNormalvekt() {
         assertEquals(NORMALVEKT, bmiCalc.beregnVektklasse(18.5));
     }
-    
+
     //+ mange flere tester på denne metoden
-    
+
     @Test
     public void avrundingAvKomma45SkalVaereKomma5() {
         assertEquals(20.5, bmiCalc.rundAvTilEnDesimal(20.45), Double.MIN_VALUE);
@@ -33,13 +33,13 @@ public class BmiCalculator5Test {
     }
 
     //+ flere tester på denne metoden
-    
-    /* 
+
+    /*
      * osv ... på de andre metodene:
-     * 
+     *
      *      double beregnBmi(double hoydeMeter, double vektKg)
      *      boolean gyldigHoydeMeter(double hoydeMeter)
      *      boolean gyldigVektKg(double vektKg)
      */
-    
+
 }

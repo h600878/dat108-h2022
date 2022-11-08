@@ -5,8 +5,7 @@ import java.io.IOException;
 public class ExchangeRateServiceTestStub implements ExchangeRateService {
 
 	@Override
-	public ExchangeRate getRate(String source, String target)
-			throws IOException {
+	public ExchangeRate getRate(String source, String target) {
 		ExchangeRate exchangeRate = new ExchangeRate();
 		exchangeRate.rate = 8.52;
 		return exchangeRate;

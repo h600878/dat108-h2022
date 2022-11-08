@@ -14,7 +14,7 @@ import org.junit.jupiter.params.provider.ValueSource;
 
 public class PersonValideringTest {
 
-	private Validator validator = Validation.buildDefaultValidatorFactory().getValidator();
+	private final Validator validator = Validation.buildDefaultValidatorFactory().getValidator();
 	
 	@Test
 	public void gyldigNavnOgFAar() {
