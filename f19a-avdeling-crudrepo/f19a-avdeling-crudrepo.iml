@@ -16,6 +16,7 @@
         <setting name="provider-name" value="Hibernate" />
         <datasource-mapping>
           <factory-entry name="entityManagerFactory" value="a945b2fc-238c-4d33-a1b0-4a4c05984c76" />
+          <factory-entry name="f19a-avdeling-crudrepo" value="2f0d3d9f-e48f-427b-80bd-78e398fef77f" />
         </datasource-mapping>
         <naming-strategy-map />
       </configuration>

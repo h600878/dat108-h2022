@@ -17,6 +17,7 @@
         <setting name="provider-name" value="Hibernate" />
         <datasource-mapping>
           <factory-entry name="entityManagerFactory" value="8e725008-3006-457e-ac5a-101eeffe2d71" />
+          <factory-entry name="f19b-ansatt-avdeling-service" value="3c1395f6-683f-4cfb-b6aa-625f20d88458" />
         </datasource-mapping>
         <naming-strategy-map />
       </configuration>

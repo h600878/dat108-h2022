@@ -12,13 +12,18 @@
         <module name="f15-sesjoner-innlogging-losning" />
         <module name="f11b-primtalltest" />
         <module name="f12-last-ned-til-timen" />
+        <module name="f15-sesjoner-innlogging" />
         <module name="f13b-post-redirect-get" />
+        <module name="f23a-bmikalkulator-testbarhet" />
         <module name="f17-di-beans-scopes" />
         <module name="f10-hallo" />
         <module name="f19a-avdeling-crudrepo" />
+        <module name="f23d-mock-repo-using-mockito" />
         <module name="f19b-ansatt-avdeling-service" />
         <module name="f13a-request-headere" />
+        <module name="f23c-valutaveksler-haandstub" />
         <module name="f13d-cookies" />
+        <module name="f23b-teste-bean-validering" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -38,6 +43,10 @@
       <module name="f17-di-beans-scopes" target="17" />
       <module name="f19a-avdeling-crudrepo" target="17" />
       <module name="f19b-ansatt-avdeling-service" target="17" />
+      <module name="f23a-bmikalkulator-testbarhet" target="17" />
+      <module name="f23b-teste-bean-validering" target="17" />
+      <module name="f23c-valutaveksler-haandstub" target="17" />
+      <module name="f23d-mock-repo-using-mockito" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -58,6 +67,10 @@
       <module name="f17-di-beans-scopes" options="-parameters" />
       <module name="f19a-avdeling-crudrepo" options="-parameters" />
       <module name="f19b-ansatt-avdeling-service" options="-parameters" />
+      <module name="f23a-bmikalkulator-testbarhet" options="-parameters" />
+      <module name="f23b-teste-bean-validering" options="-parameters" />
+      <module name="f23c-valutaveksler-haandstub" options="-parameters" />
+      <module name="f23d-mock-repo-using-mockito" options="-parameters" />
     </option>
   </component>
 </project>

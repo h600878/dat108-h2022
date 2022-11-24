@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/f10-hallo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/f10-hallo/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/f11a-registreringsskjema/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/f11a-registreringsskjema/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/f11b-primtalltest/src/main/java" charset="UTF-8" />
@@ -26,5 +28,13 @@
     <file url="file://$PROJECT_DIR$/f19a-avdeling-crudrepo/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/f19b-ansatt-avdeling-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/f19b-ansatt-avdeling-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/f23a-bmikalkulator-testbarhet/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/f23a-bmikalkulator-testbarhet/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/f23b-teste-bean-validering/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/f23b-teste-bean-validering/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/f23c-valutaveksler-haandstub/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/f23c-valutaveksler-haandstub/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/f23d-mock-repo-using-mockito/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/f23d-mock-repo-using-mockito/src/main/resources" charset="UTF-8" />
   </component>
 </project>
