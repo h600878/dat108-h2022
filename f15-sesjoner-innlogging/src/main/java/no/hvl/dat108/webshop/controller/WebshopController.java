@@ -51,9 +51,7 @@ public class WebshopController {
 
         // Oppdatere cart med data fra varer
         Cart cart = (Cart) session.getAttribute("cart");
-        for (String s : varer) {
-            cart.addItem(new CartItem(s, 10));
-        }
+        varer.stream().map(s -> new CartItem(s, 10)).forEach(cart::addItem);
 
         return "redirect:" + "webshop";
     }

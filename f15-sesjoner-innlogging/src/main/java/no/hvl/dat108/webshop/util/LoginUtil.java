@@ -24,7 +24,7 @@ public class LoginUtil {
     }
 
     public static boolean erBrukerInnlogget(HttpSession session) {
-        return session == null && session.getAttribute("username") != null;
+        return session != null && session.getAttribute("username") != null;
     }
 
 }
